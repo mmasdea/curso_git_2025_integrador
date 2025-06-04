@@ -1,0 +1,29 @@
+[Unit]
+Description=georef-ar-api gunicorn daemon
+After=network.target
+
+[Service]
+PIDFile=/run/gunicorn/api-pid
+Group=www-data
+RuntimeDirectory=gunicorn
+
+# Completar el usuario
+User=<usuario>
+
+# Completar la ruta a georef-ar-api
+WorkingDirectory=<ruta a georef-ar-api>
+
+# Completar la ruta a georef-ar-api
+ExecStart=<ruta a georef-ar-api>/env/bin/gunicorn \
+          --pid /run/gunicorn/api-pid \
+          -w 4 -k gevent \
+          --bind 0.0.0.0:5000 service:app \
+          --log-config config/logging.ini
+
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s TERM $MAINPID
+PrivateTmp=true
+Environment="GEOREF_CONFIG=config/georef.cfg"
+
+[Install]
+WantedBy=multi-user.target
