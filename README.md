@@ -60,6 +60,7 @@ Definición de ramas (branches). Trabajo simultáneo con ramas. Organización de
 
 	Pueden ingresar a través del siguiente enlace: https://capacitacionpba.ipap.gba.gob.ar/
 
+<<<<<<< HEAD
 ## Agregar un apartado al README.md donde explique de qué se trata el repositorio
 ## clonado del Estado Argentino. Esto debe hacerse en la rama proyectos
 
@@ -78,3 +79,15 @@ API del Servicio de Normalización de Datos Geográficos de Argentina.
 
 ## Documentación
 Para consultar la documentación de la API, acceder a [https://apis.datos.gob.ar/georef](https://apis.datos.gob.ar/georef).
+=======
+## Agregar un apartado al README.md con links y descripciones de al menos 2 herramientas web para aprender ramas en Git. En la rama principal.
+
+## Herramientas web para aprender ramas en Git
+Para consultar la documentación de la API, acceder a [https://apis.datos.gob.ar/georef](https://apis.datos.gob.ar/georef).
+
+[https://learngitbranching.js.org/?locale=es_AR](https://learngitbranching.js.org/?locale=es_AR): Esta herramienta es muy útil para visualizar
+ cómo funcionan las ramas y cómo se fusionan, esto a traves de una serie de ejercicios a realizar una interfaz gráfica web muy amigable.
+
+[https://gitimmersion.com/index.html](https://gitimmersion.com/index.html): Una visita guiada que recorre los fundamentos de Git, inspirada en la 
+premisa de que conocer una cosa es hacerla.
+>>>>>>> 925ab4ea42c65e0f8762c3af2195e7e172fd8f8b
